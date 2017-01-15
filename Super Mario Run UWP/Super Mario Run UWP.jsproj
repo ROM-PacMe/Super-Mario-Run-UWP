@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup Label="ProjectConfigurations">
     <ProjectConfiguration Include="Debug|AnyCPU">
@@ -52,14 +52,31 @@
     <TargetPlatformMinVersion>10.0.14393.0</TargetPlatformMinVersion>
     <MinimumVisualStudioVersion>$(VersionNumberMajor).$(VersionNumberMinor)</MinimumVisualStudioVersion>
     <DefaultLanguage>es-ES</DefaultLanguage>
-    
     <PackageCertificateKeyFile>Super Mario Run UWP_TemporaryKey.pfx</PackageCertificateKeyFile>
-    
+    <AppxAutoIncrementPackageRevision>True</AppxAutoIncrementPackageRevision>
+    <AppxBundle>Always</AppxBundle>
+    <AppxBundlePlatforms>neutral</AppxBundlePlatforms>
   </PropertyGroup>
   <ItemGroup>
     <AppxManifest Include="package.appxmanifest">
       <SubType>Designer</SubType>
     </AppxManifest>
+    <Content Include="css\index.css" />
+    <Content Include="images\giphy.gif" />
+    <Content Include="images\mario.png" />
+    <Content Include="images\nintendo.scale-100.png" />
+    <Content Include="images\supermariorun_icon.png" />
+    <Content Include="images\nintendo.png" />
+    <Content Include="images\splash.png" />
+    <Content Include="images\splash.scale-400.png" />
+    <Content Include="images\supermariorun_icon_150.png" />
+    <Content Include="images\supermariorun_icon_150.scale-100.png" />
+    <Content Include="images\supermariorun_icon_310.png" />
+    <Content Include="images\supermariorun_icon_310.scale-100.png" />
+    <Content Include="images\supermariorun_icon_44.png" />
+    <Content Include="images\supermariorun_icon_44.scale-100.png" />
+    <Content Include="images\supermariorun_icon_71.png" />
+    <Content Include="images\supermariorun_icon_71.scale-100.png" />
     <Content Include="index.html" />
     <Content Include="images\LockScreenLogo.scale-200.png" />
     <Content Include="images\SplashScreen.scale-200.png" />
@@ -68,11 +85,11 @@
     <Content Include="images\Square44x44Logo.targetsize-24_altform-unplated.png" />
     <Content Include="images\StoreLogo.png" />
     <Content Include="images\Wide310x150Logo.scale-200.png" />
+    <Content Include="inicio.html" />
+    <Content Include="js\jquery-3.1.1.min.js" />
     <Content Include="js\main.js" />
     <Content Include="css\default.css" />
-    
     <None Include="Super Mario Run UWP_TemporaryKey.pfx" />
-    
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\$(WMSJSProjectDirectory)\Microsoft.VisualStudio.$(WMSJSProject).targets" />
   <!-- To modify your build process, add your task inside one of the targets below then uncomment
