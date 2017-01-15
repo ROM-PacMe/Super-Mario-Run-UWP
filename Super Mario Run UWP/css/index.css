@@ -1,0 +1,25 @@
+*{
+    margin: 0;
+}
+.loading-mask {
+  position: fixed;
+  z-index: 9999;
+  width: 400px;
+  height: 600px;
+  -webkit-transition: all 1s;
+  transition: all 1s;
+  -webkit-transition-timing-function: ease;
+  transition-timing-function: ease;
+}
+.loading-mask.is-remove {
+  top: -120%;
+  height: 0;
+}
+.nintendologo {
+    position: absolute;
+    z-index: 3;
+}
+.splash {
+    position: absolute;
+    z-index: 1;
+}
